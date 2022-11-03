@@ -1,0 +1,28 @@
+body{
+    background-color: beige;
+}
+#header{
+    text-align: center;
+    color: blue ;
+    background-color: #e6d800;
+}
+.desc{
+    color: black;
+    background-color: #e0ed33;
+}
+#menu{
+    text-align: center;
+}
+.gambar{
+    text-align: center;
+}
+#B{
+    color: blue;
+    text-align: bold;
+    font-size: 300%;
+}
+.koleksi{
+    width: min-content;
+    margin-right: auto;
+    margin-left: auto;
+}
