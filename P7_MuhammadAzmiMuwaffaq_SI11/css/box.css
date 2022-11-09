@@ -1,0 +1,28 @@
+div{
+    width: 700px;
+    height: 600px;
+    border-radius: 10px; 
+    margin: auto;
+    margin-left: 20px;
+}
+.kontener{
+    display: flex;
+    position: absolute;
+    left: 20%;
+}
+.kontener img{
+    width: 154px;
+    height: 154px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: yellow;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: rgb(0, 189, 252);
+}
