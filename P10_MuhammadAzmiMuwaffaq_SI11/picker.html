@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker</title>
+    <style>
+        img {
+            margin-top: 20ox;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <select id="pilih" onchange="gambar()">
+            <option value="hidden">--pilih--</option>
+            <option value="leopard" id="leopard">leopard</option>
+            <option value="scorpion" id="scorpion">scorpion</option>
+            <option value="platypus" id="platypus">platypus</option>
+        </select>
+        <br>
+        <img id="gambar">
+    </div>
+
+    <script>
+
+        let elang = document.getElementById("leopard");
+        let gorila = document.getElementById("scorpion");
+        let singa = document.getElementById("platypus");
+        let pilih = document.getElementById("pilih");
+        let img = document.getElementById("gambar")
+
+        function gambar() {
+            if (pilih.value == elang.value) {
+                img.setAttribute("src","https://cdn.britannica.com/36/146436-050-6E4ACAA5/Leopard-Samburu-National-Reserve-Kenya.jpg");
+                alert("ini gambar leopard.jpg");
+            } else if (pilih.value == gorila.value) {
+                img.setAttribute("src","http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTj-cFa7uo7N4KPCwMbiqFIgnjYCbJIHXqXEOJt-pNQ6XT_Az2nXF7kTkjeQSjRD_wybBGTaz82yBf8GL4");
+                alert("ini gambar scorpion.jpg");
+            } else if (pilih.value == singa.value) {
+                img.setAttribute("src","https://images.newscientist.com/wp-content/uploads/2021/05/05111327/naturepl_01614269_web.jpg?crop=16:9,smart&width=1200&height=675&upscale=true");
+                alert("ini gambar platypus.jpg");
+            } else {
+                alert("salah pilih gambar");
+            }  
+        }
+    </script>
+</body>
+</html>
